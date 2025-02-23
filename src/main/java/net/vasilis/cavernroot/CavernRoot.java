@@ -2,9 +2,12 @@ package net.vasilis.cavernroot;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.vasilis.cavernroot.block.ModBlocks;
 import net.vasilis.cavernroot.item.ModItemGroups;
 import net.vasilis.cavernroot.item.ModItems;
+import net.vasilis.cavernroot.world.gen.ModWorldGeneration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -17,5 +20,11 @@ public class CavernRoot implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModBlocks.registerModBlocks();
 		ModItems.registerModItems();
+		ModWorldGeneration.generateModWorldGen();
+
+		CompostingChanceRegistry.INSTANCE.add(ModItems.UNWRAPPED_CAVERN_ROOT, 0.75f); //Composter functionality for the cavern root.
+
+		FuelRegistry.INSTANCE.add(ModItems.UNWRAPPED_CAVERN_ROOT, 200); //Fuel!
+
 	}
 }

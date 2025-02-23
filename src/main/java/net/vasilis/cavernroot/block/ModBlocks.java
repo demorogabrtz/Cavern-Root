@@ -1,6 +1,8 @@
 package net.vasilis.cavernroot.block;
 
 import net.minecraft.block.AbstractBlock;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -9,16 +11,22 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.vasilis.cavernroot.CavernRoot;
+import net.vasilis.cavernroot.block.custom.CavernRootBlock;
 
 public class ModBlocks {
+
     public static final Block CAVERN_ROOT_BLOCK = registerBlock("cavern_root_block",
-            new Block(
-                    AbstractBlock.Settings.create()
+            new CavernRootBlock(AbstractBlock.Settings.create()
+                    .noCollision()
                     .breakInstantly()
-                    .sounds(BlockSoundGroup.MOSS_CARPET)
+                    .sounds(BlockSoundGroup.GRASS)
+                    .pistonBehavior(PistonBehavior.DESTROY)
             )
     );
 
+    private static Block registerBlockWithoutBlockItem(String name, Block block) {
+        return Registry.register(Registries.BLOCK, Identifier.of(CavernRoot.MOD_ID, name), block);
+    }
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
