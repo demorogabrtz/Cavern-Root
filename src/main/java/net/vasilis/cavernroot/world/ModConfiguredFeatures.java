@@ -1,18 +1,39 @@
 package net.vasilis.cavernroot.world;
 
+import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
+import net.minecraft.registry.entry.RegistryEntryList;
+import net.minecraft.structure.rule.RuleTest;
+import net.minecraft.world.gen.feature.*;
+import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 import net.vasilis.cavernroot.CavernRoot;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
-import net.minecraft.world.gen.feature.ConfiguredFeature;
-import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.FeatureConfig;
+import net.vasilis.cavernroot.block.ModBlocks;
+
+import java.util.List;
 
 public class ModConfiguredFeatures {
+    public static final RegistryKey<ConfiguredFeature<?, ?>> CAVERN_ROOT_BLOCK_KEY = registerKey("cavern_root_block");
 
-    public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
 
+    public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> featureRegisterable) {
+        ConfiguredFeatures.register(
+                featureRegisterable,
+                CAVERN_ROOT_BLOCK_KEY,
+                Feature.RANDOM_PATCH,  // Generates patches like grass
+                new RandomPatchFeatureConfig(
+                        32,  // Tries per chunk (adjust for density)
+                        7,   // X spread
+                        3,   // Y spread
+                        PlacedFeatures.createEntry(
+                                Feature.SIMPLE_BLOCK,
+                                new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.CAVERN_ROOT_BLOCK))
+                        )
+                )
+        );
 
     }
 
