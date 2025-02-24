@@ -3,15 +3,15 @@
 	"id": "cavern-root",
 	"version": "${version}",
 	"name": "Cavern Root",
-	"description": "Starving in the caves? Just say NO! Eat a Cavern Root and you will be just fine. It is perfectly safe to eat.",
+	"description": "Starving in the caves? Eat a Cavern Root (or more) and continue mining. It is perfectly safe to eat.",
 	"authors": [
-		"Vasilis (aka BILLTFI9)"
+		"BILLTFI9"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
+		"homepage": "https://github.com/BILLTFI9/Cavern-Root-1.21.1",
 		"sources": "https://github.com/BILLTFI9/Cavern-Root-1.21.1"
 	},
-	"license": "MIT",
+	"license": "Apache-2.0",
 	"icon": "assets/cavern-root/icon.png",
 	"environment": "*",
 	"entrypoints": {

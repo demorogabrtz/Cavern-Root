@@ -28,7 +28,7 @@ public class CavernRootBlock extends Block {
     @Override
     public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
         BlockState belowBlock = world.getBlockState(pos.down());
-        return belowBlock.isOf(Blocks.STONE) || belowBlock.isOf(Blocks.DEEPSLATE) || belowBlock.isOf(Blocks.GRANITE) || belowBlock.isOf(Blocks.ANDESITE) || belowBlock.isOf(Blocks.DIORITE) || belowBlock.isOf(Blocks.TUFF);
+        return belowBlock.isOf(Blocks.STONE) || belowBlock.isOf(Blocks.DEEPSLATE) || belowBlock.isOf(Blocks.GRANITE) || belowBlock.isOf(Blocks.ANDESITE) || belowBlock.isOf(Blocks.DIORITE) || belowBlock.isOf(Blocks.TUFF) || belowBlock.isOf(Blocks.DRIPSTONE_BLOCK);
         // Ensures it can only be placed on certain blocks (prevents stacking on itself).
     }
 

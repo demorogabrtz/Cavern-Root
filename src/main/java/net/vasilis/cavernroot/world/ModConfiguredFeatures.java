@@ -26,7 +26,7 @@ public class ModConfiguredFeatures {
                 Feature.RANDOM_PATCH,  // Generates patches like grass
                 new RandomPatchFeatureConfig(
                         32,  // Tries per chunk (adjust for density)
-                        7,   // X spread
+                        2,   // X spread
                         3,   // Y spread
                         PlacedFeatures.createEntry(
                                 Feature.SIMPLE_BLOCK,
