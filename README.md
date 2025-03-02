@@ -3,9 +3,9 @@
 ## 🫚 Description
 Adds the **Cavern Root**. A new plant that spawns in caves and functions as extra food for starving players. With this mod, you will never have to stop mining because you run out of food!
 
-[![Video Showcase](https://img.youtube.com/vi/OOYN8MyYDsQ/0.jpg)](https://www.youtube.com/watch?v=OOYN8MyYDsQ)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OOYN8MyYDsQ" frameborder="0" allowfullscreen></iframe>
 
-![Cavern Root Patch](gallery/Cavern root patch.jpg)
+![Cavern Root Patch](gallery/Cavern-root-patch.jpg)
 
 ## 📖 Features
 1. **Cavern Root Block**. It _generates naturally_ in most caves. Does not spawn in lush caves as the Glow Berries are enough for that biome.
