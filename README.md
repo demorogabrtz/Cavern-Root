@@ -3,8 +3,6 @@
 ## 🫚 Description
 Adds the **Cavern Root**. A new plant that spawns in caves and functions as extra food for starving players. With this mod, you will never have to stop mining because you run out of food!
 
-[![Video Showcase](https://img.youtube.com/vi/OOYN8MyYDsQ/0.jpg)](https://www.youtube.com/watch?v=OOYN8MyYDsQ)
-
 ![Cavern Root Patch](gallery/Cavern-root-patch.jpg)
 
 ## 📖 Features
