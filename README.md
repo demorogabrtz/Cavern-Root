@@ -2,6 +2,10 @@
 
 ## 🫚 Description
 Adds the **Cavern Root**. A new plant that spawns in caves and functions as extra food for starving players. With this mod, you will never have to stop mining because you run out of food!
+<br>
+[Check the mod out on Modrinth!](https://modrinth.com/mod/cavern-root)
+<br>
+[Check the mod out on CurseForge!](https://www.curseforge.com/minecraft/mc-mods/cavern-root)
 
 ![Cavern Root Patch](gallery/Cavern-root-patch.jpg)
 
