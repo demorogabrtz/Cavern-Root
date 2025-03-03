@@ -10,8 +10,8 @@ Adds the **Cavern Root**. A new plant that spawns in caves and functions as extr
 ![Cavern Root Patch](gallery/Cavern-root-patch.jpg)
 
 ## 📖 Features
-1. **Cavern Root Block**. It _generates naturally_ in most caves. Does not spawn in lush caves as the Glow Berries are enough for that biome.
-2. **Unwrapped Cavern Root**. Obtained by _breaking_ a Cavern Root Block, cannot be placed on the ground.
-3. **Twisted Cavern Root**. _Crafted_ from a single Unwrapped Cavern Root. It is edible and gives 3 hunger (1.5 chicken icons).
+1. **Cavern Root**. It _generates naturally_ in most caves. Does not spawn in lush caves as the Glow Berries are enough for that biome.
+2. **Twisted Cavern Root**. _Crafted_ from a single Cavern Root. It is edible and replenishes 3 hunger (1.5 chicken icons).
+3. **Lumen Root**. A mutated Cavern Root found below y = 0. It also emits light.
 
 ### Expect improved versions!
